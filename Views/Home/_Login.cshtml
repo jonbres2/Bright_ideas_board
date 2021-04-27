@@ -1,0 +1,25 @@
+@model User
+
+<div class="container">
+    <form asp-action="ConfirmLogin" asp-controller="Home" method="post">
+        <div class="row d-flex justify-content-center">
+            <div class="col-3 pt-3 mx-3">
+                <h5>Log In!</h5>
+                <br>
+                <label asp-for="Email"></label>
+                <br>
+                <span class="text-danger" asp-validation-for="Email"></span>
+                <input asp-for="Email">
+                <br><br>
+
+                <label asp-for="Password"></label>
+                <br>
+                <span class="text-danger" asp-validation-for="Password"></span>
+                <input asp-for="Password">
+                <br><br>
+
+                <input type="submit" value="Submit">    
+            </div>
+        </div>
+    </form>
+</div>

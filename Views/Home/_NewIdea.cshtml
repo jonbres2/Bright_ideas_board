@@ -1,0 +1,17 @@
+@model Idea
+
+<center><div class="container mt-5">
+    <h3>Post a New Idea!</h3>
+    <form asp-action="CreateIdea" asp-controller="Home" method="Post">
+        <div class="row">
+            <div class="col">
+                <input type="hidden" asp-for="UserID" value="@ViewBag.LoggedUser">
+                <br>
+                <span class="text-danger" asp-validation-for="Description"></span>
+                <input asp-for="Description">
+                <br><br>
+                <input class="btn btn-dark btn-lg" type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+</div></center>

@@ -1,0 +1,29 @@
+@model User
+
+@{
+    ViewData["Title"] = "User Profile";
+}
+
+<header class="p-3 bg-dark text-white d-flex justify-content-center">
+    <div class="container d-flex justify-content-center">
+        <h1 class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">Hi @ViewBag.UserName!</h1>
+        <a href="/Dashboard" class="link d-flex justify-content-center fs-4">Dashboard</a>
+        <a href="/logout" class="link d-flex justify-content-center fs-4 mx-3">Logout</a>
+    </div>
+</header>
+<div class="container mt-5">
+    <h2>User's Information:</h2>
+    <br>
+    <h4>Name: @Model.Name</h4>
+    <br>
+    <h4>Alias: @Model.Alias</h4>
+    <br>
+    <h4>Email: @Model.Email</h4>
+</div>
+<div class="container mt-5">
+    <h2>Posting Information:</h2>
+    <br>
+    <h4>Total Number of Posts: @Model.CreatedIdeas.Count()</h4>
+    <br>
+    <h4>Total Number of Likes: @Model.LikedIdeas.Count()</h4>
+</div>

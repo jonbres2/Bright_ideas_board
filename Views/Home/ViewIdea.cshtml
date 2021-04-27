@@ -1,0 +1,49 @@
+@model Idea
+
+@{
+    ViewData["Title"] = "View Idea";
+}
+
+<header class="p-3 bg-dark text-white d-flex justify-content-center">
+    <div class="container d-flex justify-content-center">
+        <h1 class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">Hi @ViewBag.UserName!</h1>
+        <a href="/Dashboard" class="link d-flex justify-content-center fs-4">Dashboard</a>
+        <a href="/logout" class="link d-flex justify-content-center fs-4 mx-3">Logout</a>
+    </div>
+</header>
+
+
+<div class="container mt-5">
+    <h3>Check out this idea!</h3>
+    <table class="table table-sm table-dark table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Creator</th>
+                <th scope="col">Description</th>
+            </tr>
+        </thead>
+            <tr>
+                <td><a href="/User/@Model.Creator.UserID">@Model.Creator.Alias</a></td>
+                <td>@Model.Description</td>
+            </tr>
+    </table>
+</div>
+
+<div class="container mt-5">
+    <h3>People who Liked this Idea!</h3>
+    <table class="table table-sm table-dark table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Alias</th>
+                <th scope="col">Name</th>
+            </tr>
+        </thead>
+            @foreach(var like in Model.IdeaLikes)
+            {
+            <tr>
+                <td><a href="/User/@like.Liker.UserID">@like.Liker.Alias</a></td>
+                <td>@like.Liker.Name</td>
+            </tr>
+            }
+    </table>
+</div>

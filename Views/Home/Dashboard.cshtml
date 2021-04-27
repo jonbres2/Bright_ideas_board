@@ -1,0 +1,49 @@
+@* @model List<Idea> *@
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<header class="p-3 bg-dark text-white d-flex justify-content-center">
+    <div class="container d-flex justify-content-center">
+        <h1 class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">Hi @ViewBag.UserName!</h1>
+        <a href="/logout" class="link d-flex justify-content-center fs-4">Logout</a>
+    </div>
+</header>
+
+<partial name="_NewIdea"></partial>
+<div class="container mt-5">
+    <h3>Check out these ideas!</h3>
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Creator</th>
+                <th scope="col">Description</th>
+                <th scope="col">No. of Likes</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        @foreach(Idea idea in ViewBag.AllIdeas)
+        {
+            <tr>
+                <td><a href="User/@idea.Creator.UserID">@idea.Creator.Alias</a></td>
+                <td>@idea.Description</td>
+                <td><a href="/Idea/@idea.IdeaID/View">@idea.IdeaLikes.Count</a></td>
+                <td>@if (@ViewBag.LoggedUser == idea.Creator.UserID)
+                        {
+                            <a href="/Idea/@idea.IdeaID/Delete">Delete</a>
+                        }
+                    else
+                        if(idea.IdeaLikes.Any(like => like.UserID == ViewBag.LoggedUser))
+                        {
+                            <a href="/Idea/@idea.IdeaID/Unlike">Unlike</a>
+                        }
+                        else
+                        {
+                            <a href="/Idea/@idea.IdeaID/Like">Like</a>
+                        }
+                        </td>
+            </tr>
+        }
+    </table>
+</div>
