@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace CSharpExam2.Models
+namespace Bright_ideas_board.Models
 {
     public class MyContext : DbContext
     {

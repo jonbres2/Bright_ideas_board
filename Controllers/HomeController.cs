@@ -5,12 +5,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using CSharpExam2.Models;
+using Bright_ideas_board.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 
-namespace CSharpExam2.Controllers
+namespace Bright_ideas_board.Controllers
 {
     public class HomeController : Controller
     {

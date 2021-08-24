@@ -907,11 +907,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jon\\Documents\\CodingDojo\\3_c_sharp\\CSharpExam2\\CSharpExam2.csproj",
-      "projectName": "CSharpExam2",
-      "projectPath": "C:\\Users\\jon\\Documents\\CodingDojo\\3_c_sharp\\CSharpExam2\\CSharpExam2.csproj",
+      "projectUniqueName": "C:\\Users\\jon\\Documents\\CodingDojo\\Resume Projects\\Bright_ideas_board\\Bright_ideas_board.csproj",
+      "projectName": "Bright_ideas_board",
+      "projectPath": "C:\\Users\\jon\\Documents\\CodingDojo\\Resume Projects\\Bright_ideas_board\\Bright_ideas_board.csproj",
       "packagesPath": "C:\\Users\\jon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jon\\Documents\\CodingDojo\\3_c_sharp\\CSharpExam2\\obj\\",
+      "outputPath": "C:\\Users\\jon\\Documents\\CodingDojo\\Resume Projects\\Bright_ideas_board\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jon\\AppData\\Roaming\\NuGet\\NuGet.Config"

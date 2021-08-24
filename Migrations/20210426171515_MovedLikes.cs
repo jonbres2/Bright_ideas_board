@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace CSharpExam2.Migrations
+namespace Bright_ideas_board.Migrations
 {
     public partial class MovedLikes : Migration
     {

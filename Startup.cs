@@ -7,10 +7,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using CSharpExam2.Models;
+using Bright_ideas_board.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace CSharpExam2
+namespace Bright_ideas_board
 {
     public class Startup
     {

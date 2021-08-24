@@ -22,7 +22,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "CSharpExam2/1.0.0": {
+      "Bright_ideas_board/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "3.1.5",
           "Pomelo.EntityFrameworkCore.MySql": "3.1.1",
@@ -297,10 +297,10 @@
           "WindowsBase": "4.0.0.0"
         },
         "runtime": {
-          "CSharpExam2.dll": {}
+          "Bright_ideas_board.dll": {}
         },
         "compile": {
-          "CSharpExam2.dll": {}
+          "Bright_ideas_board.dll": {}
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -2236,7 +2236,7 @@
     }
   },
   "libraries": {
-    "CSharpExam2/1.0.0": {
+    "Bright_ideas_board/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

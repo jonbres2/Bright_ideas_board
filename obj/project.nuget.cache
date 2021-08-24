@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9bE6pVtzPOAbi5V999E+r+PcQIhEi5CoBm3tPvfWXsAncv5aBj7cpE4/tQTKvMYBaQMLvpFy51B1IBmDcdImrA==",
+  "dgSpecHash": "7rIlvAS4V+ev0CNfZI579rrpfYa8OTsiZ53elTtN/q3TAh41RS5v0z1Ss241iCIj8P09pOziCwBsH1gaK143ZA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jon\\Documents\\CodingDojo\\3_c_sharp\\CSharpExam2\\CSharpExam2.csproj",
+  "projectFilePath": "C:\\Users\\jon\\Documents\\CodingDojo\\Resume Projects\\Bright_ideas_board\\Bright_ideas_board.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jon\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\jon\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
